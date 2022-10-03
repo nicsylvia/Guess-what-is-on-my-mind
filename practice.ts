@@ -2,14 +2,12 @@ import os from "os"
 import prompt from "prompt-sync"
 
 // Friday's assignment on node.js
+let pt = prompt()
 console.log(`Welcome to "Guess what is on my mind" game.`);
-// let name = prompt("So beautiful,what's your name: ")
+let name = pt("So beautiful,what's your name: ")
 console.log(`It's awesome to have you on my platform ${name} `);
 
 
-
-
-let pt = prompt()
 let RAM = os.totalmem()/(1024 * 1024 * 1024);
 console.log(RAM);
 let model = parseInt(os.cpus()[0].model.split(" ")[2].charAt(1));
